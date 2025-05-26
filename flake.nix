@@ -1,5 +1,6 @@
 {
-  description = "breaking2";
+  description = "dashi-server flake";
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     rust-overlay.url = "github:oxalica/rust-overlay";
@@ -26,7 +27,9 @@
           with pkgs;
           mkShell {
             buildInputs = [
+              openssl
               pkg-config
+              bacon
               (rust-bin.stable.latest.default.override { extensions = [ "rust-src" ]; })
             ];
             RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
