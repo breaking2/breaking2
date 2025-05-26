@@ -1,3 +1,3 @@
 pub fn dummy() {
-    println!("Hello, from aruco.");
+    println!("Hello, from camera.");
 }

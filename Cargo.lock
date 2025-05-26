@@ -12,13 +12,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "aruco"
-version = "0.0.1"
-dependencies = [
- "opencv",
-]
-
-[[package]]
 name = "autocfg"
 version = "1.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -29,6 +22,13 @@ name = "bitflags"
 version = "2.9.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1b8e56985ec62d17e9c1001dc89c88ecd7dc08e47eba5ec7c29c7b5eeecde967"
+
+[[package]]
+name = "camera"
+version = "0.0.1"
+dependencies = [
+ "opencv",
+]
 
 [[package]]
 name = "cc"
@@ -71,8 +71,8 @@ dependencies = [
 name = "controller"
 version = "0.0.1"
 dependencies = [
- "aruco",
- "motor",
+ "camera",
+ "gpio",
 ]
 
 [[package]]
@@ -126,6 +126,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a8d1add55171497b4705a648c6b583acafb01d58050a51727785f0b2c8e0a2b2"
 
 [[package]]
+name = "gpio"
+version = "0.0.1"
+dependencies = [
+ "rppal",
+]
+
+[[package]]
 name = "jobserver"
 version = "0.1.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -146,13 +153,6 @@ name = "memchr"
 version = "2.7.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "78ca9ab1a0babb1e7d5695e3530886289c18cf2f87ec19a575a0abdce112e3a3"
-
-[[package]]
-name = "motor"
-version = "0.0.1"
-dependencies = [
- "rppal",
-]
 
 [[package]]
 name = "nb"

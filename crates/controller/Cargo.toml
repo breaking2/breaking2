@@ -4,5 +4,5 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
-aruco = { path = "../aruco" }
-motor = { path = "../motor" }
+gpio = { path = "../gpio" }
+camera = { path = "../camera" }

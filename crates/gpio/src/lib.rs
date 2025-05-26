@@ -1,3 +1,3 @@
 pub fn dummy() {
-    println!("Hello, from motor.");
+    println!("Hello, from gpio.");
 }
