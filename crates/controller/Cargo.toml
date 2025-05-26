@@ -5,4 +5,4 @@ edition.workspace = true
 
 [dependencies]
 aruco = { path = "../aruco" }
-moter = { path = "../moter" }
+motor = { path = "../motor" }

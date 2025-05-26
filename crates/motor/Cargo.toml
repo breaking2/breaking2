@@ -1,5 +1,5 @@
 [package]
-name = "moter"
+name = "motor"
 version.workspace = true
 edition.workspace = true
 
