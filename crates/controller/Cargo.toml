@@ -5,4 +5,4 @@ edition.workspace = true
 
 [dependencies]
 aruco = { path = "../aruco" }
-controller = { path = "../controller" }
+moter = { path = "../moter" }
