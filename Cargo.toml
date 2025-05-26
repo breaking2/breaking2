@@ -1,0 +1,7 @@
+[package]
+name = "moter"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rppal = { version = "0.22.1", features = ["hal"] }
