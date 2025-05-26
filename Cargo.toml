@@ -1,7 +1,17 @@
-[package]
-name = "moter"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+resolver = "2"
+members = [
+    "crates/aruco",
+    "crates/controller",
+    "crates/moter",
+]
 
-[dependencies]
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+
+[workspace.dependencies]
+# aruco
+opencv = "0.94.4"
+# moter
 rppal = { version = "0.22.1", features = ["hal"] }

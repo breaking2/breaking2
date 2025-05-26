@@ -1,0 +1,7 @@
+[package]
+name = "aruco"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+opencv.workspace = true

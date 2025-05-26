@@ -1,6 +1,5 @@
 {
-  description = "dashi-server flake";
-
+  description = "breaking2";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     rust-overlay.url = "github:oxalica/rust-overlay";
