@@ -1,5 +1,5 @@
 fn main() {
     println!("Hello, world!");
-    aruco::dummy();
+    camera::dummy();
     motor::dummy();
 }

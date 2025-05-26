@@ -1,7 +1,7 @@
 [package]
-name = "aruco"
+name = "gpio"
 version.workspace = true
 edition.workspace = true
 
 [dependencies]
-opencv.workspace = true
+rppal.workspace = true

@@ -1,9 +1,9 @@
 [workspace]
 resolver = "2"
 members = [
-    "crates/aruco",
+    "crates/camera",
     "crates/controller",
-    "crates/motor",
+    "crates/gpio",
 ]
 
 [workspace.package]
