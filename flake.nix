@@ -40,8 +40,9 @@
             RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
             LD_LIBRARY_PATH = lib.makeLibraryPath [
               llvmPackages_20.clang-unwrapped
-              opencv
               llvmPackages_20.libcxxClang
+              pkg-config
+              opencv
             ];
           };
       }
