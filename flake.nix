@@ -29,6 +29,7 @@
             buildInputs = [
               # for GitHub Actions
               llvmPackages_20.libllvm
+              llvmPackages_20.clang-unwrapped
               # for NixOS
               openssl
               pkg-config
@@ -40,6 +41,7 @@
             RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
             LD_LIBRARY_PATH = lib.makeLibraryPath [
               llvmPackages_20.libllvm
+              llvmPackages_20.clang-unwrapped
               llvmPackages_20.libcxxClang
             ];
           };
