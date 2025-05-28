@@ -30,7 +30,7 @@
               # for GitHub Actions
               llvmPackages_20.clang-unwrapped
               # for NixOS
-              openssl
+              # openssl
               pkg-config
               bacon
               opencv
