@@ -8,6 +8,6 @@ edition = "2021"
 
 [workspace.dependencies]
 # aruco
-opencv = { version = "0.94.4", features = ["clang-runtime"] }
+opencv = "0.94.4"
 # moter
 rppal = { version = "0.22.1", features = ["hal"] }
