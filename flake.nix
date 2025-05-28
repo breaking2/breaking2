@@ -31,6 +31,7 @@
               pkg-config
               bacon
               opencv
+              llvmPackages_20.libllvm
               llvmPackages_20.libcxxClang
               (rust-bin.stable.latest.default.override { extensions = [ "rust-src" ]; })
             ];
