@@ -1,4 +1,4 @@
-name: motor-test
+name: gpio-test
 
 on:
   schedule:

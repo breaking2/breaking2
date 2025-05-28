@@ -27,6 +27,9 @@
           with pkgs;
           mkShell {
             buildInputs = [
+              # for GitHub Actions
+              llvmPackages_20.libllvm
+              # for NixOS
               openssl
               pkg-config
               bacon
@@ -36,6 +39,7 @@
             ];
             RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
             LD_LIBRARY_PATH = lib.makeLibraryPath [
+              llvmPackages_20.libllvm
               llvmPackages_20.libcxxClang
             ];
           };
