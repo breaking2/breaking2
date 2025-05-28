@@ -29,8 +29,9 @@
             buildInputs = [
               # for GitHub Actions
               llvmPackages_20.clang-unwrapped
+              vcpkg
+              cmake
               # for NixOS
-              # openssl
               pkg-config
               bacon
               opencv
@@ -43,6 +44,8 @@
               llvmPackages_20.libcxxClang
               pkg-config
               opencv
+              vcpkg
+              cmake
             ];
           };
       }
