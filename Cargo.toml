@@ -1,10 +1,6 @@
 [workspace]
 resolver = "2"
-members = [
-    "crates/camera",
-    "crates/controller",
-    "crates/gpio",
-]
+members = ["crates/camera", "crates/controller", "crates/gpio"]
 
 [workspace.package]
 version = "0.0.1"
@@ -12,6 +8,6 @@ edition = "2021"
 
 [workspace.dependencies]
 # aruco
-opencv = "0.94.4"
+opencv = { version = "0.94.4", features = ["clang-runtime"] }
 # moter
 rppal = { version = "0.22.1", features = ["hal"] }
