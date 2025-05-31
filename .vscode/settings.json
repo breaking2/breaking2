@@ -1,3 +1,10 @@
 {
-    "nixEnvSelector.nixFile": "${workspaceFolder}/flake.nix"
+    "nixEnvSelector.nixFile": "${workspaceFolder}/flake.nix",
+    "cSpell.words": [
+        "cachix",
+        "dofs",
+        "gantt",
+        "GPID",
+        "steper"
+    ]
 }
