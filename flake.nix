@@ -27,10 +27,6 @@
           with pkgs;
           mkShell {
             buildInputs = [
-              # for GitHub Actions
-              llvmPackages_20.clang-unwrapped
-              vcpkg
-              cmake
               # for NixOS
               pkg-config
               bacon
